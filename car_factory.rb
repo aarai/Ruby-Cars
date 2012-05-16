@@ -1,6 +1,6 @@
 class Car
 
-	def is_it_moving?
+	def is_moving?
 		@speed > 0	
 	end
 	
@@ -9,12 +9,22 @@ class Car
 		@model = model
 		@year = year
 		@odometer = 0
+		@position = [0,0]
 	end
 	
 	def odometer_reading
 		@odometer
 	end
+	
+	
+	def turn_right 
+		@position
+	end
 
+	def turn_left
+		@position
+	end
+		
 	def accelerate(speed, time)
 		@speed = speed
 		@time = time
