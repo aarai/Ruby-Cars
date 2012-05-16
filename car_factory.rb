@@ -22,7 +22,9 @@ class Car
 	end
 
 	def turn_left
-		@position
+		@position.each do |var|
+			var
+		end
 	end
 		
 	def accelerate(speed, time)
