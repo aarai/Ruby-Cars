@@ -6,9 +6,9 @@ my_car = Car.new("Volkswagen","Jetta",2008)
 p "My car is a #{my_car.make}, #{my_car.model} from #{my_car.year}"
 
 
-puts my_car.turn_right
+p my_car.turn_right
 
-puts my_car.turn_left
+p my_car.turn_left
 
 #round 1
 puts my_car.accelerate(20,5)
