@@ -13,8 +13,8 @@ class Car
 	def accelerate(speed, time)
 		@speed = speed
 		@time = time
-
-		@distance = @speed * @time
+		
+		move
 	end
 
 	def brake
@@ -37,6 +37,11 @@ class Car
 		@year
 	end
 
+protected
+
+	def move
+		@distance = @speed * @time
+	end
 
 end
 
