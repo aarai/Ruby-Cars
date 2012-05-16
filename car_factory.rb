@@ -8,12 +8,16 @@ class Car
 		@make = make
 		@model = model
 		@year = year
+		@odometer = 0
 	end
 	
+	def odometer_reading
+		@odometer
+	end
+
 	def accelerate(speed, time)
 		@speed = speed
 		@time = time
-		
 		move
 	end
 
@@ -41,6 +45,10 @@ protected
 
 	def move
 		@distance = @speed * @time
+
+		@odometer = @odometer + @distance
+
+		@distance
 	end
 
 end
